@@ -24,9 +24,3 @@ let value = 1;
 value = value == 1 ? 0 : value == 0 ? 1 : value == 1 ? 0 : 1;
 
 console.log(value)
-// console.log(num)
-// console.log(typeof id)
-// console.log(typeof available)
-// console.log(typeof count)
-// console.log(typeof name)
-// console.log(typeof arthor )

@@ -9,6 +9,7 @@ var2 = var3
 var3 = var4
 
 console.log(var1)
+console.log()
 console.log(var2)
 console.log(var3)
 
