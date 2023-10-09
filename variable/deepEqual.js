@@ -27,10 +27,10 @@ function deepEqual(a, b) {
     }
 
     return false;
-  }
+}
   
 
-  let objA = { a: 1, b: { c: 2 } };
+let objA = { a: 1, b: { c: 2 } };
 let objB = { a: 1, b: { c: 2 } };
 let objC = { a: 1, b: { c: 3 } };
 
