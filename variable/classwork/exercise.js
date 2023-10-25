@@ -3,7 +3,7 @@ let vehicle = {
     "wheels": 4,
     "door": 2,
     __proto__:{
-       'name': starboy
+       'name': 'starboy'
     }
 }
 console.log(vehicle.__proto__)
