@@ -4,4 +4,5 @@ function everyWithSome(array, predicate) {
 
 const numbers = [1, 2, 3, 4, 5];
 const allAreEven = everyWithSome(numbers, (num) => num % 2 === 0);
+
 console.log(allAreEven);
