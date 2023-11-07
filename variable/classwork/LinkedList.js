@@ -74,14 +74,16 @@ class LinkedList {
     current.next = null;
   }
 
- 
+
 }
 
 const myList = new LinkedList();
 
-myList.append(1);
-myList.append(2);
-myList.append(3);
+myList.append(30);
+myList.append(40);
+myList.append(90);
+myList.append(10);
+myList.append(12);
 
 myList.addAtHead(0);
 myList.addAtTail(4);
