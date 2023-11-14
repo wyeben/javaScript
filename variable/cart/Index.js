@@ -21,7 +21,6 @@ const addButton = document.getElementById('add-btn');
         updateTotal();
     });
 
-    // Add event listener for the "Remove" button
     removeButton.addEventListener('click', function() {
         const items = cartItems.getElementsByTagName('tr');
         if (items.length > 0) {
