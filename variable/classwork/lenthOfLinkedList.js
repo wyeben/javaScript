@@ -58,6 +58,19 @@ class Node {
         current = current.next;
       }
     }
+
+    checkIfPresent() {
+      let present = this.head;
+      let lastNode = null;
+  
+      while (present !== null) {
+          lastNode = present;
+          present = present.next;
+      }
+  
+      return lastNode;
+  }
+  
   }
   
   const newLinkedList = new LinkedList();
@@ -68,6 +81,7 @@ class Node {
   newLinkedList.addToList(10);
   newLinkedList.addToList(12);
   newLinkedList.addToList(40);
+  // console.log(newLinkedList.checkIfPresent(10))
   
   console.log(newLinkedList.checkLength());
   newLinkedList.removeDuplicate();

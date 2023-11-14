@@ -74,6 +74,17 @@ class LinkedList {
     current.next = null;
   }
 
+  checkIfPresent(data) {
+    let present = new Node(data);
+    let lastNode = null;
+
+    while (present !== null) {
+        lastNode = present;
+        present = present.next;
+    }
+
+    return lastNode;
+  }
 
 }
 
@@ -90,5 +101,6 @@ myList.addAtTail(4);
 
 myList.deleteAtHead();
 myList.deleteAtTail();
+myList.checkIfPresent(10)
 
 myList.display(); 
