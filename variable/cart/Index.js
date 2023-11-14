@@ -30,7 +30,6 @@ const addButton = document.getElementById('add-btn');
         }
     });
 
-    // Function to update the total price
     function updateTotal() {
         const items = cartItems.getElementsByTagName('tr');
         let totalPrice = 0;
