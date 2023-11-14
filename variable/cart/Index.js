@@ -3,7 +3,6 @@ const addButton = document.getElementById('add-btn');
     const cartItems = document.getElementById('cart-items');
     const totalElement = document.getElementById('total');
 
-    // Add event listener for the "Add" button
     addButton.addEventListener('click', function() {
         const newItem = `
             <tr>
