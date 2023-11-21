@@ -51,6 +51,22 @@ class LinkedList {
       current.next = newNode;
     }
   }
+  findNthFromEnd(n) {
+    let first = this.head;
+    let second = this.head;
+    
+    for (let i = 0; i < n; i++) {
+        first = first.next;
+    }
+  
+    while (first !== null) {
+        first = first.next;
+        second = second.next;
+    }
+
+    return second.data; 
+}
+
 
   deleteAtHead() {
     if (!this.head) {
@@ -89,18 +105,21 @@ class LinkedList {
 }
 
 const myList = new LinkedList();
+let nth = 3
+myList.append(42);
+myList.append(25);
+myList.append(34);
+myList.append(3);
+myList.append(20);
 
-myList.append(30);
-myList.append(40);
-myList.append(90);
-myList.append(10);
-myList.append(12);
+// myList.addAtHead(0);
+// myList.addAtTail(4);
 
-myList.addAtHead(0);
-myList.addAtTail(4);
+// myList.deleteAtHead();
+// myList.deleteAtTail();
+// myList.checkIfPresent(10)
 
-myList.deleteAtHead();
-myList.deleteAtTail();
-myList.checkIfPresent(10)
 
-myList.display(); 
+console.log(myList.findNthFromEnd(nth));
+myList.display();
+
