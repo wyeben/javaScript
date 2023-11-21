@@ -102,6 +102,12 @@ class LinkedList {
     return lastNode;
   }
 
+  isPalindrome(head){
+    if(!head || !head.next){
+      return true;
+    }
+  }
+
 }
 
 const myList = new LinkedList();

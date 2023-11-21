@@ -35,7 +35,7 @@ class ListNode {
         return false;
       }
       prev = prev.next;
-      firstHalf = firstHalf.next;
+      firstHalf = firstHalf.next;   
     }
   
     return true;
